@@ -1,4 +1,3 @@
-```markdown
 # 🚀 jessy-david.dev
 
 Mon portfolio personnel de développeur web, construit avec Next.js 15 et les dernières technologies modernes.
@@ -18,8 +17,8 @@ Mon portfolio personnel de développeur web, construit avec Next.js 15 et les de
 -   🔥 **Animations fluides** - Effets visuels modernes
 
 ## 🏗️ Structure du projet
-```
 
+```
 ├── app/
 │ ├── api/contact/ # API de contact
 │ ├── globals.css # Styles globaux
@@ -33,8 +32,7 @@ Mon portfolio personnel de développeur web, construit avec Next.js 15 et les de
 ├── config/
 │ └── site.ts # Configuration du site
 └── public/ # Assets statiques & favicons
-
-````
+```
 
 ## 🚀 Installation
 
@@ -50,7 +48,7 @@ pnpm install
 
 # Configurer les variables d'environnement
 cp .env.example .env.local
-````
+```
 
 ## 💻 Développement
 
@@ -110,4 +108,3 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 <p align="center">
   Fait avec ❤️ et 🍵
 </p>
-```
