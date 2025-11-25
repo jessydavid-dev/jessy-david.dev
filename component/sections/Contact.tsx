@@ -48,18 +48,20 @@ export default function Contact() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        const form = e.currentTarget;
+
         setIsSubmitting(true);
         setError("");
         setIsSubmitted(false);
 
-        // Vérifier que le captcha est validé
         if (!captchaToken) {
             setError("Veuillez valider le captcha");
             setIsSubmitting(false);
             return;
         }
 
-        const formData = new FormData(e.currentTarget);
+        const formData = new FormData(form);
         const data = {
             name: formData.get("name") as string,
             email: formData.get("email") as string,
@@ -85,7 +87,7 @@ export default function Contact() {
             console.log("Succès:", result);
 
             setIsSubmitted(true);
-            e.currentTarget.reset();
+            form.reset();
             setCaptchaToken("");
             setTimeout(() => setIsSubmitted(false), 5000);
         } catch (err) {
@@ -136,7 +138,7 @@ export default function Contact() {
                     <div className="inline-flex items-center gap-2 bg-linear-to-r from-blue-500/10 to-purple-500/10 rounded-full px-4 py-2 mb-4">
                         <Sparkles className="w-4 h-4 text-blue-400" />
                         <span className="text-sm font-semibold text-slate-300">
-                            Restons en contact
+                            Entrons en contact
                         </span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
