@@ -68,13 +68,13 @@ html {
 }
 
 /* GRID UTILITY */
-.bg-grid-slate-200\/50 {
+.bg-grid-slate-400\/50 {
     background-image: linear-gradient(
             to right,
-            rgb(226 232 240 / 0.5) 1px,
+            rgb(161 161 170 / 0.3) 1px,
             transparent 1px
         ),
-        linear-gradient(to bottom, rgb(226 232 240 / 0.5) 1px, transparent 1px);
+        linear-gradient(to bottom, rgb(161 161 170 / 0.3) 1px, transparent 1px);
     background-size: 100px 100px;
 }
 
