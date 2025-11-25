@@ -1,8 +1,17 @@
+import About from "@/component/sections/About";
+import Contact from "@/component/sections/Contact";
+import Hero from "@/component/sections/Hero";
+import Projects from "@/component/sections/Projects";
+import Skills from "@/component/sections/Skills";
+
 export default function Page() {
     return (
-        <div className="p-4">
-            <h1 className="text-2xl font-bold">Jessy David</h1>
-            <p>Hello World !</p>
-        </div>
+        <main className="min-h-screen">
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+        </main>
     );
 }

@@ -1,1 +1,95 @@
+/* globals.css */
 @import "tailwindcss";
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* GRID PATTERNS (Light) */
+.grid-wrapper {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #f8fafc;
+}
+
+.grid-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+        linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+    background-size: 20px 30px;
+    -webkit-mask-image: radial-gradient(
+        ellipse 70% 60% at 50% 0%,
+        #000 60%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        ellipse 70% 60% at 50% 0%,
+        #000 60%,
+        transparent 100%
+    );
+}
+
+/* GRID PATTERNS (Dark)  */
+.grid-wrapper-dark {
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: #0f172a;
+}
+
+.grid-background-dark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(to right, #1e293b 1px, transparent 1px),
+        linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+    background-size: 20px 30px;
+    -webkit-mask-image: radial-gradient(
+        ellipse 70% 60% at 50% 0%,
+        #000 60%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        ellipse 70% 60% at 50% 0%,
+        #000 60%,
+        transparent 100%
+    );
+}
+
+/* GRID UTILITY */
+.bg-grid-slate-200\/50 {
+    background-image: linear-gradient(
+            to right,
+            rgb(226 232 240 / 0.5) 1px,
+            transparent 1px
+        ),
+        linear-gradient(to bottom, rgb(226 232 240 / 0.5) 1px, transparent 1px);
+    background-size: 100px 100px;
+}
+
+/* ANIMATIONS */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
