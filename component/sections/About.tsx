@@ -20,10 +20,10 @@ export default function About() {
     return (
         <section
             id="about"
-            className="py-20 bg-slate-50 relative overflow-hidden"
+            className="py-20 bg-sky-50 relative overflow-hidden"
         >
             {/* Grid Background subtil */}
-            <div className="absolute inset-0 bg-grid-slate-200/50 mask-[linear-gradient(to_bottom,white,transparent)]"></div>
+            <div className="absolute inset-0 bg-grid-slate-400/50 mask-[linear-gradient(to_bottom,white,transparent)]"></div>
 
             <div
                 ref={ref}
