@@ -81,6 +81,17 @@ export default function Hero() {
                         Me contacter
                     </GlowButton>
                 </motion.div>
+                <motion.cite
+                    className="block text-slate-400 italic mt-8 text-sm md:text-base"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{
+                        opacity: isInView ? 1 : 0,
+                        y: isInView ? 0 : 20,
+                    }}
+                    transition={{ duration: 0.8, delay: 1 }}
+                >
+                    C&apos;est une bonne situation ça, développeur Full Stack ?
+                </motion.cite>
             </motion.div>
         </section>
     );
