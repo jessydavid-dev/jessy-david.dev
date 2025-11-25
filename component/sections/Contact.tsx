@@ -8,7 +8,6 @@ import {
     Github,
     Linkedin,
     Mail,
-    MapPin,
     Send,
     Sparkles,
 } from "lucide-react";
@@ -216,7 +215,12 @@ export default function Contact() {
                             className="bg-linear-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6"
                         >
                             <div className="flex items-start gap-3">
-                                <MapPin className="w-5 h-5 text-blue-400 mt-1" />
+                                <div className="relative h-3 w-3 mt-1">
+                                    {/* Effet ping */}
+                                    <span className="absolute h-3 w-3 rounded-full bg-green-500 opacity-75 animate-ping"></span>
+                                    {/* Pastille fixe */}
+                                    <span className="absolute h-3 w-3 rounded-full bg-green-500"></span>
+                                </div>
                                 <div>
                                     <h3 className="text-white font-semibold mb-2">
                                         Disponibilité
